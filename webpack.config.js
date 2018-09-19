@@ -1,7 +1,7 @@
-module.exports = env => {
-  console.log(env);
+module.exports = ({ mode }) => {
+  console.log(mode);
   return {
-    mode: env.mode,
+    mode,
     output: {
       filename: "bundle.js"
     }
