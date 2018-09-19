@@ -6,8 +6,12 @@
   "license": "MIT",
   "scripts": {
     "webpack": "webpack",
+    "debug": "node --inspect-brk ./node_modules/webpack/bin/webpack.js",
     "dev": "npm run webpack -- --mode development",
-    "prod": "npm run webpack -- --mode production"
+    "prod": "npm run webpack -- --mode production",
+    "prod:debug": "npm run debug -- --mode production",
+    "dev:debug": "npm run debug -- --mode development",
+    "debugthis": "node --inspect --inspect-brk ./src/index.js"
   },
   "devDependencies": {
     "webpack": "^4.19.1",
