@@ -49,3 +49,6 @@ rules: [
 
 # Webpack Dev Server
 
+- live coding - watch in the browser
+- express
+- add middleware to add functionality on server
