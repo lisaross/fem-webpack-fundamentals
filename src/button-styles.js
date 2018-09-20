@@ -1,5 +1,5 @@
-const redButton = "color: red;";
-const blueButton = "color:blue;";
+const red = "color: red;";
+const blue = "color:blue;";
 const makeColorStyle = color => `color: ${color};`;
 
 exports.red = red;
