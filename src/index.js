@@ -1,5 +1,7 @@
 // track user
-
+import firebase from "./firebase";
+import mixpanel from "./mixpanel";
+import buttons from "./buttons-event";
 import nav from "./nav";
 import { footer } from "./footer";
 import makeButton from "./button";
@@ -12,9 +14,9 @@ const button = makeButton("Yay! a button!");
 button.style = makeColorStyle("cyan");
 button.setAttribute(
   "onclick",
-  `mixpanel.track("button clicked webpack"); console.log("button clicked")`
+  `mixpanel.track("button clicked firebase"); console.log("button clicked ${
+    button.name
+  }")`
 );
-document.body.appendChild(button);
+document.getElementById("box").appendChild(button);
 document.body.appendChild(footer);
-
-// mixpanel.init("daa345feecc0547d36874491c6a018c5");
