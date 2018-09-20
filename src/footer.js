@@ -11,4 +11,4 @@ const footer = document.createElement("footer");
 footer.appendChild(top);
 footer.appendChild(bottom);
 
-export { top, bottom };
+export { top, bottom, footer };
