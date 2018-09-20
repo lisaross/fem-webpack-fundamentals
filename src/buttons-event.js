@@ -1,6 +1,5 @@
 function buttonEvent() {
   var allButtons = document.getElementsByTagName("button");
-  console.log("Button List: ");
   for (i = 0; i < allButtons.length; i++) {
     (function(index) {
       var buttonName = allButtons[index].name;
