@@ -4,6 +4,7 @@ module.exports = ({ mode }) => {
   console.log(mode);
   return {
     mode,
+    devtool: "inline-source-map",
     output: {
       filename: "bundle.js"
     },

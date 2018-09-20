@@ -46,3 +46,6 @@ rules: [
 - allows you to hook into compilation lifecycle
 - lots of built in plugins
 - lets you do things you can't do with a loader - ie. uglify, compression, etc
+
+# Webpack Dev Server
+
