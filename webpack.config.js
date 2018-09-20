@@ -1,6 +1,7 @@
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-module.exports = ({ mode }) => {
+const modeConfig = env => require(`./build-utils/webpack.${env}`)(env);
+module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
   console.log(mode);
   return {
     mode,
